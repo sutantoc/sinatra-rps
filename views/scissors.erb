@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <h2> We played scissors! </h2>
+  <h2> They played <%= @their_move%>! </h2>
+
+  <% if @their_move == "scissors"%>
+  <h2> We tied! </h2>
+  <% elsif @their_move == "paper"%>
+  <h2> We won! </h2>
+  <% else %>
+  <h2> We lost! </h2>
+  <% end %>
+</body>
+
+</html>
